@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --ff-red-hat-display: "Red Hat Display", sans-serif;
+
+  --clr-pale-blue: hsl(225, 100%, 94%);
+  --clr-bright-blue: hsl(245, 75%, 52%);
+  --clr-very-pale-blue: hsl(225, 100%, 98%);
+  --clr-desaturated-blue: hsl(224, 23%, 55%);
+  --clr-dark-blue: hsl(223, 47%, 23%);
+  --clr-neutral: rgb(255, 255, 255);
+
+  --fs-500: 500;
+  --fs-700: 700;
+  --fs-900: 900;
+}
+.attribution {
+  font-size: 11px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  background-color: var(--clr-pale-blue);
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff-red-hat-display);
+  font-size: 1rem;
+}
+.container {
+  width: 375px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  text-align: center;
+  background-color: var(--clr-neutral);
+}
+.illustration-img {
+  width: 100%;
+}
+.order {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+}
+.order-summary-title {
+  color: var(--clr-dark-blue);
+  font-weight: var(--fs-900);
+}
+.order-description {
+  color: var(--clr-desaturated-blue);
+  line-height: 1.5rem;
+}
+.order-plan {
+  background-color: var(--clr-very-pale-blue);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.plan {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.plan-title {
+  color: var(--clr-dark-blue);
+  font-weight: var(--fs-700);
+}
+.plan-rate {
+  color: var(--clr-desaturated-blue);
+}
+.change-rate-link {
+  color: var(--clr-bright-blue);
+  opacity: 1;
+}
+.change-rate-link:hover {
+  opacity: 0.8;
+}
+.btn {
+  width: 100%;
+  padding: 0.75rem 0;
+  margin: 0.5rem 0;
+  color: var(--clr-neutral);
+  background-color: var(--clr-bright-blue);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: var(--fs-700);
+  cursor: pointer;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.cancel-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--clr-desaturated-blue);
+  font-weight: var(--fs-700);
+}
+.cancel-btn:hover {
+  color: var(--clr-dark-blue);
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 330px;
+  }
+}
